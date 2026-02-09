@@ -258,6 +258,10 @@ nav a:visited {
   color: #3498db;
 }
 
+.sidebarLinks :visited {
+    color: #9b59b6;
+}
+
 aside {
   background-color: #ecf0f1;
   padding: 15px;
