@@ -6,39 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esmpio Curriculum</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="LogoScuola.png" type="image/png">
 </head>
 
 <body>
+    <!-- Intestazione -->
     <header class="header-container">
-        <a href="https://www.itisgalilei.edu.it/" target="_blank" alt="Sito ITIS Galileo Galilei" title="Visita il sito dell'ITIS Galileo Galilei">
+        <a href="https://www.itisgalilei.edu.it/" target="_blank" alt="Sito ITIS Galileo Galilei"
+            title="Visita il sito dell'ITIS Galileo Galilei">
             <img src="LogoScuola.png" alt="Banner Scuola" class="logo">
         </a>
         <div class="header-titoli">
             <h1 class="titoloheader">ITIS GALILEO GALILEI</h1>
             <h1 class="titoloheader">Il mondo della tecnologia</h1>
+            <h2>Curriculum Vitae</h2>
+            <h3>11/02/2007</h3>
         </div>
+
     </header>
 
-    <main id="Home">
-        <h2>Dati Personali</h2>
-        <p><strong>Nome:</strong> Chunlei</p>
-        <p><strong>Cognome:</strong> Camozzo</p>
-        <p><strong>Data di Nascita:</strong> 11/02/2007</p>
-        <p><strong>Indirizzo:</strong> Via Conte Verde, 51, 00185 Roma RM</p>
-        <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5646.137816412108!2d12.505410675905711!3d41.89235857124018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61962c8905bf%3A0x5b14e79443b6c1f9!2sITIS%20Galileo%20Galilei!5e1!3m2!1sen!2sit!4v1767886606391!5m2!1sen!2sit"
-                width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
+    <!-- Barra di navigazione -->
+    <nav>
+        <ul>
+            <li><a href="https://www.itisgalilei.edu.it/" target="_blank">Home</a></li>
+            <li><a href="#InformazioniPersonali">Informazioni Personali</a></li>
+            <li><a href="#Formazione">Formazione</a></li>
+            <li><a href="#Conoscenze">Conoscenze Tecniche</a></li>
+            <li><a href="form.html">Contattami</a></li>
+            <li><a>Altro</a></li>
+        </ul>
+    </nav>
 
-    <section id="Esperienze">
-        <h2>Esperienze Lavorative</h2>
-       
+
+    <div class="layoutContainer">
+        <aside class="sidebarLinks">
+            <ul>
+            <li><a href="https://github.com/chunlei2021" target="_blank">🐙 GitHub</a></li>
+            <li><a href="https://it.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" target="_blank">📸 Linkedin</a></li>
+            <li><a href="form.html">✉️ Contatti</a></li>
+            </ul>
+        </aside>
+
+        <!-- Sezione Informazioni Personali -->
+        <main id="InformazioniPersonali">
+
+            <div class="info-container">
+                <div class="testo-dati">
+                    <h2>Informazioni Personali</h2>
+                    <p><strong>Nome:</strong> Chunlei</p>
+                    <p><strong>Cognome:</strong> Camozzo</p>
+                    <p><strong>Telefono:</strong> +39 3770810217</p>
+                    <p><strong>Email:</strong> <a href="mailto:camozzo.chunlei.2022@itisgalileiroma.it">camozzo.chunlei.2022@itisgalileiroma.it</a></p>
+                    <p><strong>Referente:</strong> Prof. Francesco Amato</p>
+                    <p><strong>Indirizzo:</strong> Via Conte Verde, 51, 00185 Roma RM</p>
+                </div>
+
+                <aside>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5646.137816412108!2d12.505410675905711!3d41.89235857124018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61962c8905bf%3A0x5b14e79443b6c1f9!2sITIS%20Galileo%20Galilei!5e1!3m2!1sen!2sit!4v1767886606391!5m2!1sen!2sit"
+                        width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- Sezione Formazione -->
+    <section id="Formazione">
+        <h2>Formazione</h2>
+        <ul class="datiLista">
+            <li><strong>Diploma di licenza del primo ciclo di Istruzione</strong></li>
+            <p><strong>Scuola:</strong> I.C. Alcide De Gasperi - Plesso Jaime Pintor</p>
+            <p><strong>Anno di Diploma:</strong> 2021</p>
+            <p><strong>Voto:</strong> 9/10</p>
+            <li><strong>Diploma di Istituo Tecnico in:</strong> Informatica e Telecomunicazioni</li>
+            <p><strong>Scuola:</strong> ITIS Galileo Galilei, Roma</p>
+            <p><strong>Anno di Diploma:</strong> 2026</p>
+            <p><strong>Voto:</strong> xxx/100</p>
+        </ul>
     </section>
 
+    <!-- Sezione Conoscenze Tecniche -->
+    <section id="Conoscenze">
+        <h2>Conoscenze Tecniche</h2>
+        <ul class="datiLista">
+            <li><strong>Informatica:</strong></li>
+            <p>Conoscenza di base dei sistemi operativi Windows e Linux.</p>
+            <p>Competenze in programmazione con Python, HTML&CSS, Java e C++.</p>
+            <p>Esperienza con database SQL e NoSQL.</p>
+            <li><strong>Sistemi e Reti:</strong></li>
+            <p>Conoscenza dei protocolli di rete e configurazione di base di router e switch.</p>
+            <p>Esperienza con la gestione di reti locali (LAN) e reti wireless (Wi-Fi).</p>
+            <li><strong>Elettronica:</strong></li>
+            <p>Conoscenza di base dei circuiti elettronici.</p>
+            <p>Competenze nella lettura e interpretazione di schemi elettronici.</p>
+        </ul>
+    </section>
+
+    <!-- Sezione Competenze -->
+    <section id="Competenze">
+        <h2>Soft Skills</h2>
+        <ul class="datiLista">
+            <li><strong>Gestione del Tempo e Stress:</strong> Organizzazione delle proprie attività rispettando le
+                scadenze.</li>
+            <li><strong>Teamwork:</strong> Abilità nel lavorare efficacemente in team e collaborare con colleghi.</li>
+            <li><strong>Problem Solving:</strong> Capacità di analizzare problemi complessi e trovare soluzioni.</li>
+            <li><strong>Adattabilità:</strong> Flessibilità nell'adattarsi a nuove situazioni e ambienti di lavoro.</li>
+        </ul>
+    </section>
+
+    <!-- Sezione Lingue -->
+    <section id="Lingue">
+        <h2>Lingue</h2>
+        <ul class="datiLista">
+            <li><strong>Italiano:</strong> Madrelingua</li>
+            <li><strong>Inglese:</strong> Livello B2 (Certificazione Cambridge)</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 ITIS Galileo Galilei. Tutti i diritti riservati.</p>
-        <p>Chunlei Camozzo</p>
+        <p>
+            Autorizzo il trattamento dei miei dati personali ai sensi dell'articolo 13 del GDPR (Regolamento UE
+            2016/679).<br>
+            Copyright © Chunlei Camozzo 2026 — Ultimo aggiornamento: 10 febbraio 2026
+        </p>
     </footer>
 </body>
 
