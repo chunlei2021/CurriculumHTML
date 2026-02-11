@@ -112,11 +112,6 @@ footer {
   margin-top: auto;
 }
 
-.map {
-  flex: 1;
-  max-width: 400px;
-}
-
 /* logo */
 .logo {
   max-width: 100%;
@@ -124,7 +119,7 @@ footer {
   width: 150px;
 }
 
-/* nav */
+/* nav barra orizzontale*/
 nav {
   background-color: #f8f9fa;
   padding: 20px;
@@ -168,7 +163,9 @@ nav a:visited {
   color: var(--primary-color);
 }
 
-/* aside */
+
+/* Informazioni Personali + Mappa */
+
 .infoContainer {
   display: flex;
   gap: 20px;
@@ -189,6 +186,19 @@ nav a:visited {
   border-radius: 20px;
   align-self: flex-start;
   margin: 0;
+}
+
+aside {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+
+.map {
+  flex: 1;
+  max-width: 400px;
 }
 
 /* form */
@@ -216,21 +226,7 @@ nav a:visited {
   font-weight: bold;
 }
 
-/* sidebar */
-.layoutContainer {
-  display: flex;
-  gap: 20px;
-  margin: 15px 0;
-}
-
-aside {
-  background-color: var(--secondary-color);
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-}
-
-/* Hamburger menu styles */
+/* Menu Tendina */
 .menuTendina {
   position: absolute;
   right: 20px;
@@ -271,4 +267,39 @@ aside {
   width: 70%;
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoContainer .testoDati,
+  .infoContainer aside {
+    width: 90%;
+  }
+
+  .infoContainer aside {
+    margin-top: 20px;
+  }
+
+  .titoloheader {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  header.header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

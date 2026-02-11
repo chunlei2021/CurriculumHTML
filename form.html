@@ -32,36 +32,56 @@
             <li><a style="color: brown;" href="index.html">Torna Home</a></li>
 
         </ul>
+
+        <div class="menuTendina">
+            <button onclick="toggleMenu()"><img src="Images/hide.png" alt="Menu" style="width: 30px;"></button>
+            <ul>
+                <li><a href="https://github.com/chunlei2021" target="_blank"><img src="Images/GitHub.png" alt="GitHub"
+                            style="width: 40px"></a></li>
+                <li><a href="https://it.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" target="_blank"><img
+                            src="Images/LinkedIn.png" alt="LinkedIn" style="width: 40px;"></a></li>
+                <li><a href="https://www.itisgalilei.edu.it/" target="_blank"><img src="Images/graduate.png"
+                            alt="Sito ITIS Galileo Galilei" style="width: 40px;"></a></li>
+                <li><a href="form.html"><img src="Images/contact-us.png" alt="Contatti" style="width: 40px;"></a></li>
+            </ul>
+        </div>
     </nav>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menuTendina ul');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
     <main>
-  <h1>Contattami</h1>
-  <p>Compila il modulo per inviarmi un messaggio:</p>
+        <h1>Contattami</h1>
+        <p>Compila il modulo per inviarmi un messaggio:</p>
 
-  <form action="#" method="get" style="max-width: 600px;">
-    <div style="margin-bottom: 15px;">
-      <label for="nome" class="stileNomeCampo">Nome *</label>
-      <input type="text" id="nome" name="nome" required class="stileCampo">
-    </div>
+        <form action="#" method="get" style="max-width: 600px;">
+            <div style="margin-bottom: 15px;">
+                <label for="nome" class="stileNomeCampo">Nome *</label>
+                <input type="text" id="nome" name="nome" required class="stileCampo">
+            </div>
 
-    <div style="margin-bottom: 15px;">
-      <label for="cognome" class="stileNomeCampo">Cognome *</label>
-      <input type="text" id="cognome" name="cognome" required class="stileCampo">
-    </div>
+            <div style="margin-bottom: 15px;">
+                <label for="cognome" class="stileNomeCampo">Cognome *</label>
+                <input type="text" id="cognome" name="cognome" required class="stileCampo">
+            </div>
 
-    <div style="margin-bottom: 15px;">
-      <label for="email" class="stileNomeCampo">Email *</label>
-      <input type="email" id="email" name="email" required class="stileCampo">
-    </div>
+            <div style="margin-bottom: 15px;">
+                <label for="email" class="stileNomeCampo">Email *</label>
+                <input type="email" id="email" name="email" required class="stileCampo">
+            </div>
 
-    <div style="margin-bottom: 20px;">  
-      <label for="messaggio" class="stileNomeCampo">Messaggio *</label>
-      <textarea id="messaggio" name="messaggio" rows="6" required class="stileCampo"></textarea>
-    </div>
+            <div style="margin-bottom: 20px;">
+                <label for="messaggio" class="stileNomeCampo">Messaggio *</label>
+                <textarea id="messaggio" name="messaggio" rows="6" required class="stileCampo"></textarea>
+            </div>
 
-    <button type="submit" class="bottoneForm">Invia Messaggio</button>
-  </form>
-</main>
+            <button type="submit" class="bottoneForm">Invia Messaggio</button>
+        </form>
+    </main>
 
     <!-- Footer -->
     <footer>
