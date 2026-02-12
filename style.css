@@ -48,12 +48,22 @@ section {
   border-radius: 20px;
 }
 
-section ul.datiLista li {
+section ul .boxConoscenze {
+  background-color: #daecff;
+  margin: 5px 0;
+  padding: 30px;
+  padding-top: 5px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  align-items: center;
+}
+
+section ul.listaDati li {
   margin-top: 20px;
   padding-left: 0px;
 }
 
-section ul.datiLista p {
+section ul.listaDati p {
   margin: 1px 0;
 }
 
