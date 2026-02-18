@@ -312,4 +312,9 @@ aside {
     flex-direction: column;
     gap: 10px;
   }
+
+  .boxConoscenze h2{
+    font-size: 110%;
+    margin-left: -20px;
+  }
 }
